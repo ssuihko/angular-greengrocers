@@ -90,6 +90,13 @@ app-cart {
   border: 2px solid #757575;
 }
 
+app-cart app-total {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
 #cart h2 {
   margin-bottom: 0;
   text-align: center;

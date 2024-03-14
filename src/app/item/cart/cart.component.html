@@ -1,0 +1,12 @@
+<main id="cart">
+  <div class="cart--item-list-container">
+    <ul class="item-list cart--item-list">
+      <app-cart-item
+        *ngFor="let item of cartitems"
+        [item]="item"
+        (plus)="executePlus($event)"
+        (minus)="executeMinus($event)"
+      ></app-cart-item>
+    </ul>
+  </div>
+</main>

@@ -1,0 +1,15 @@
+<header id="store">
+  <h1>Greengrocers</h1>
+  <ul class="buttons">
+    <li><button (click)="filterType($event)">Filter By Type</button></li>
+    <li><button (click)="sortPrice()">Sort By Price</button></li>
+    <li><button (click)="sortName()">Sort By Name</button></li>
+  </ul>
+  <ul class="item-list store--item-list">
+    <app-list-item
+      *ngFor="let item of filteredItems | async"
+      [item]="item"
+      (add)="addToCart($event)"
+    ></app-list-item>
+  </ul>
+</header>

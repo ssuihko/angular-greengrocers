@@ -1,9 +1,9 @@
-<header id="store">
-  <h1>Greengrocers</h1>
-  <!-- your store here -->
-</header>
-<main id="cart">
-  <h2>Your Cart</h2>
-  <!-- your cart here -->
-  <!-- your total here -->
-</main>
+<nav>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/store">Store</a></li>
+    <li><a routerLink="/checkout">Checkout</a></li>
+  </ul>
+</nav>
+<router-outlet />
+<app-total *ngIf="router.url === '/checkout'"></app-total>

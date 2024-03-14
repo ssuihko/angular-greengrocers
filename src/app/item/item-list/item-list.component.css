@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0 auto; /* Remove margins */
+  margin: 0 auto;
+}
+
+.cart--item-list-container {
+  min-width: 320px;
+  height: 100%;
+  padding: 0 1rem;
+
+  overflow-y: scroll;
+
+  border-radius: 0.5rem;
+  border: 2px solid #757575;
+}
+
+.type-filter {
+  size: 30%;
+}
